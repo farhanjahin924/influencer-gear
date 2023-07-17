@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 2px solid red; */
+  border: 2px solid red;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -136,9 +136,30 @@ nav {
   align-items: end;
   margin-top: 20px;
 }
-  
-/* 
+  /* join section */
+  .join-section{
+    height: inherit;
+    padding-top: 50px;
+    width: 90%;
+    margin: auto;
+    
+  }
+  .join-container{
+    display: flex;
+    gap: 50px;
+    /* height: 270px; */
+    align-items: center ;
+    text-align: start;
+  }
+  .join-section img{
+    height: 100%;
 
+  }
+  .join-container p{
+    margin: 10px  0px;
+  }
+
+/* 
 
 RESPONSIVE FOR MOBILE DEVICE 
 
