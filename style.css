@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -136,29 +136,69 @@ nav {
   align-items: end;
   margin-top: 20px;
 }
-  /* join section */
-  .join-section{
-    height: inherit;
-    padding-top: 50px;
-    width: 90%;
-    margin: auto;
-    
-  }
-  .join-container{
-    display: flex;
-    gap: 50px;
-    /* height: 270px; */
-    align-items: center ;
-    text-align: start;
-  }
-  .join-section img{
-    height: 100%;
+/* join section */
+.join-section {
+  height: inherit;
+  padding-top: 50px;
+  width: 90%;
+  margin: auto;
+}
+.join-container {
+  display: flex;
+  gap: 50px;
+  /* height: 270px; */
+  align-items: center;
+  text-align: start;
+}
+.join-section img {
+  width: 70%;
+}
 
-  }
-  .join-container p{
-    margin: 10px  0px;
-  }
-
+.join-container p {
+  margin: 10px 0px;
+}
+.join-text button {
+  display: inline-flex;
+  padding: 10px 24px;
+  gap: 8px;
+  border: none;
+  border-radius: 0;
+}
+/* footer */
+footer {
+  background: #0a0826;
+  height: 30vh;
+  margin-top: 70px;
+  padding-top: 30px;
+  text-align: center;
+  align-items: center;
+}
+footer h4 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 30px;
+}
+footer p {
+  color: var(--text-gray-300, #d9dbe1);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  margin: 10px;
+}
+.icons {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: #fff;
+  text-align: center;
+}
 /* 
 
 RESPONSIVE FOR MOBILE DEVICE 
@@ -166,7 +206,11 @@ RESPONSIVE FOR MOBILE DEVICE
 
 */
 @media screen and (max-width: 576px) {
-  nav {
+  html {
+    font-size: 8px;
+} 
+  nav,
+  .join-container {
     flex-direction: column;
   }
   .nav-right a {
@@ -176,7 +220,6 @@ RESPONSIVE FOR MOBILE DEVICE
     flex-direction: column-reverse;
   }
   .collection-main-container {
-    
     grid-template-columns: repeat(1, 1fr);
   }
 }
