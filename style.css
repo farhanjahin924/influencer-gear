@@ -1,15 +1,21 @@
 * {
   margin: 0;
   padding: 0;
+  /* border: 2px solid red; */
 }
 body {
   font-family: "Poppins", sans-serif;
 }
+header {
+  width: 80%;
+  margin: auto;
+}
+
 /* nav style */
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 60px 100px;
+  margin: 50px 0px;
   text-align: center;
 }
 .nav-right a {
@@ -22,7 +28,7 @@ nav {
   margin-left: 15px;
   text-align: center;
 }
-.nav-right i{
+.nav-right i {
   color: #3a3a3a;
   font-size: 1rem;
   font-weight: 600;
@@ -34,7 +40,42 @@ nav {
   font-family: Poppins;
   font-size: 1.5rem;
   font-weight: 700;
-  
+}
+/* Banner section */
+.banner-title {
+  color: #3a3a3a;
+  font-size: 3.25rem;
+  font-weight: 700;
+}
+.description {
+  color: #3a3a3a;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 40px 0px;
+}
+.btn-primary {
+  border-radius: 2.56rem;
+  background: #e02c6d;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 24px;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-right {
+  /* height: 475px; */
+  width: 50%;
+  align-items: center;
+}
+.banner-right img {
+  width: 100%;
+  background-image: url("./images/Circle\ design.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* 
@@ -44,11 +85,16 @@ RESPONSIVE FOR MOBILE DEVICE
 
 */
 @media screen and (max-width: 576px) {
-  nav{
+  nav {
     flex-direction: column;
-    gap: 5px;
+  }
+  .nav-right a {
+    margin-left: 5px;
+  }
+  .banner {
+    flex-direction: column-reverse;
   }
 }
-@media screen and (min-width: 576px) and (max-width: 960px){
-  
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
 }
